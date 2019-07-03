@@ -1,0 +1,14 @@
+%url=https://gcc.gnu.org/onlinedocs/gcc-7.2.0/gcc/ARM-ARMv8-M-Security-Extensions.html#ARM-ARMv8-M-Security-Extensions
+%header=6.60.9 ARM ARMv8-M Security Extensions
+cmse_TT
+cmse_TT_fptr
+cmse_TTT
+cmse_TTT_fptr
+cmse_TTA
+cmse_TTA_fptr
+cmse_TTAT
+cmse_TTAT_fptr
+cmse_check_address_range
+cmse_nsfptr_create
+cmse_is_nsfptr
+cmse_nonsecure_caller

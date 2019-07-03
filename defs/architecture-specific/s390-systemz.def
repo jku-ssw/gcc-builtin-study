@@ -1,0 +1,12 @@
+%url=https://gcc.gnu.org/onlinedocs/gcc-7.2.0/gcc/S_002f390-System-z-Built-in-Functions.html#S_002f390-System-z-Built-in-Functions
+%header=6.60.25 S/390 System z Built-in Functions
+__builtin_tbegin
+__builtin_tbegin_nofloat
+__builtin_tbegin_retry
+__builtin_tbegin_retry_nofloat
+__builtin_tbeginc
+__builtin_tend
+__builtin_tabort
+__builtin_tx_assist
+__builtin_tx_nesting_depth
+__builtin_non_tx_store

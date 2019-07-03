@@ -1,0 +1,4 @@
+%url=https://gcc.gnu.org/onlinedocs/gcc-7.2.0/gcc/ARM-Floating-Point-Status-and-Control-Intrinsics.html#ARM-Floating-Point-Status-and-Control-Intrinsics
+%header=6.60.8 ARM Floating Point Status and Control Intrinsics
+__builtin_arm_get_fpscr
+__builtin_arm_set_fpscr

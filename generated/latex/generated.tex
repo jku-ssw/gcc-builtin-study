@@ -1,0 +1,665 @@
+% number of search terms
+\newcommand{\nrTotalTerms}[0]{12,339}
+% number of builtins
+\newcommand{\nrBuiltins}[0]{12,314}
+% number of architecture-specific builtins
+\newcommand{\nrArchitectureSpecificBuiltins}[0]{5,480}
+% number of machine-independent builtins
+\newcommand{\nrArchitectureIndependentBuiltins}[0]{560}
+\newcommand{\nrGCCInternalBuiltins}[0]{6,299}
+\newcommand{\nrNotDefBuiltins}[0]{6,275}
+\newcommand{\nrUnknownBuiltins}[0]{3,357}
+\newcommand{\nrDefBuiltins}[0]{6,040}
+\newcommand{\nrUsedBuiltins}[0]{3,083}
+% number of unfiltered projects
+\newcommand{\nrProjectsUnfiltered}[0]{4,998}
+% number of total projects
+\newcommand{\nrProjects}[0]{4,913}
+% project with fewest stars
+\newcommand{\nrFromStars}[0]{80}
+% project with most stars
+\newcommand{\nrToStars}[0]{52,207}
+% total million lines of C code
+\newcommand{\totalMLoc}[0]{1,124}
+\newcommand{\diskSpaceOccupiedGB}[0]{354}
+% max number of builtins per project
+\newcommand{\maxNrBuiltinsPerProject}[0]{23,637}
+% avg number of builtins per project
+\newcommand{\avgNrBuiltinsPerProject}[0]{173}
+\newcommand{\medianNrBuiltinsPerProject}[0]{9}
+\newcommand{\medianNrMachineSpecificBuiltinsPerProject}[0]{69}
+\newcommand{\medianNrMachineIndependentBuiltinsPerProject}[0]{7}
+% total number of k builtins
+\newcommand{\kBuiltins}[0]{319}
+% number of project-unique builtins
+\newcommand{\kProjectUniqueBuiltins}[0]{30}
+% number of projects with builtins
+\newcommand{\nrProjectsWithBuiltins}[0]{1,842}
+% percentage of projects with builtins
+\newcommand{\percentageProjectsWithBuiltins}[0]{37\%}
+% ############################## filtering
+\newcommand{\percentageRemovedByDoubleQuotes}[0]{2\%}
+\newcommand{\nrKRemovedByDoubleQuotes}[0]{14,788,000}
+\newcommand{\percentageBuiltinFilteredByComments}[0]{1\%}
+\newcommand{\percentageFilteredByCompilerDirectories}[0]{45\%}
+\newcommand{\builtinsWithLessThanTwoOccurrences}[0]{1,005}
+\newcommand{\percentageFilteredByBlacklist}[0]{1\%}
+\newcommand{\percentageFilteredBuiltins}[0]{48\%}
+\newcommand{\kBuiltinsUnfiltered}[0]{659}
+\newcommand{\nrBlacklist}[0]{1,272}
+% ############################## builtins
+% max number of unique builtins per project
+\newcommand{\maxNumberUniqueBuiltinsPerProject}[0]{2,069}
+\newcommand{\avgNumberUniqueBuiltinsPerProject}[0]{17}
+\newcommand{\medianNumberUniqueBuiltinsPerProject}[0]{4}
+\newcommand{\medianNumberMachineSpecificUniqueBuiltinsPerProject}[0]{17}
+\newcommand{\medianNumberMachineIndependentUniqueBuiltinsPerProject}[0]{3}
+\newcommand{\medianBuiltinEveryXLOC}[0]{5,741}
+\newcommand{\avgBuiltinEveryXLOC}[0]{20417}
+\newcommand{\minBuiltinEveryXLOC}[0]{7}
+\newcommand{\maxBuiltinEveryXLOC}[0]{1,680,582}
+% architecture-specific vs. architecture-independent builtins
+\newcommand{\nrProjectsWithMachineIndependentBuiltins}[0]{1,776}
+\newcommand{\nrProjectsWithMachineSpecificBuiltins}[0]{422}
+\newcommand{\kMachineSpecificBuiltinsTotal}[0]{213}
+\newcommand{\kMachineIndependentBuiltinsTotal}[0]{85}
+\newcommand{\topOtherBuiltins}[0]{21}
+\newcommand{\nrOtherBuiltins}[0]{68}
+\newcommand{\topSyncBuiltins}[0]{11}
+\newcommand{\topAtomicBuiltins}[0]{7}
+\newcommand{\topOtherLibcBuiltins}[0]{4}
+\newcommand{\topInternalBuiltins}[0]{4}
+\newcommand{\topAddressBuiltins}[0]{3}
+\newcommand{\offsetofBuiltins}[0]{0}
+\newcommand{\objectSizeBuiltins}[0]{0}
+\newcommand{\overflowBuiltins}[0]{0}
+\newcommand{\topMachineSpecificBuiltins}[0]{44}
+\newcommand{\topPowerpcAltivecBuiltins}[0]{17}
+\newcommand{\topArmCBuiltins}[0]{25}
+% ############################### unused builtins
+\newcommand{\numberDefBuiltinsUsed}[0]{3,006}
+\newcommand{\numberDefBuiltinsNotUsed}[0]{3,033}
+\newcommand{\percentageDefBuiltinsUsed}[0]{50\%}
+\newcommand{\percentageDefBuiltinsNotUsed}[0]{50\%}
+\newcommand{\nrMachineSpecificBuiltinsUsed}[0]{2,627}
+\newcommand{\nrMachineIndependentBuiltinsUsed}[0]{379}
+\newcommand{\nrMachineSpecificBuiltinsUnused}[0]{2,852}
+\newcommand{\nrMachineIndependentBuiltinsUnused}[0]{181}
+\newcommand{\percentageUnusedMachineSpecificBuiltins}[0]{52\%}
+\newcommand{\percentageUnusedMachineIndependetBuiltins}[0]{32\%}
+% ############################### classified historical trends
+\newcommand{\numberProjectsGitHistoryProcessed}[0]{1,834}
+\newcommand{\numberProjectsNotAnalyzed}[0]{8}
+\newcommand{\percentageProjectsGitHistoryProcessed}[0]{100\%}
+\newcommand{\numberProjectsTrendAnalyzed}[0]{2,536}
+\newcommand{\classificationsNrAgreed}[0]{36\%}
+\newcommand{\classificationsNrTwoAgreed}[0]{46\%}
+\newcommand{\classificationsAllDisagreed}[0]{18\%}
+\newcommand{\nrUnusedaarch}[0]{4}
+\newcommand{\percentageUnusedaarch}[0]{100\%}
+\newcommand{\nrUnusedaltivec}[0]{103}
+\newcommand{\percentageUnusedaltivec}[0]{100\%}
+\newcommand{\nrUnusedarcsim}[0]{102}
+\newcommand{\percentageUnusedarcsim}[0]{100\%}
+\newcommand{\nrUnusedarmiWMMXt}[0]{140}
+\newcommand{\percentageUnusedarmiWMMXt}[0]{100\%}
+\newcommand{\nrUnusedbounds}[0]{11}
+\newcommand{\percentageUnusedbounds}[0]{100\%}
+\newcommand{\nrUnusedcilk}[0]{13}
+\newcommand{\percentageUnusedcilk}[0]{100\%}
+\newcommand{\nrUnusedfrvinteger}[0]{10}
+\newcommand{\percentageUnusedfrvinteger}[0]{100\%}
+\newcommand{\nrUnusedfrvmedia}[0]{88}
+\newcommand{\percentageUnusedfrvmedia}[0]{100\%}
+\newcommand{\nrUnusedfrvother}[0]{6}
+\newcommand{\percentageUnusedfrvother}[0]{100\%}
+\newcommand{\nrUnusednds}[0]{8}
+\newcommand{\percentageUnusednds}[0]{100\%}
+\newcommand{\nrUnusedpicoChip}[0]{6}
+\newcommand{\percentageUnusedpicoChip}[0]{100\%}
+\newcommand{\nrUnusedrx}[0]{21}
+\newcommand{\percentageUnusedrx}[0]{100\%}
+\newcommand{\nrUnusedsh}[0]{2}
+\newcommand{\percentageUnusedsh}[0]{100\%}
+\newcommand{\nrUnusedsparcvis}[0]{141}
+\newcommand{\percentageUnusedsparcvis}[0]{100\%}
+\newcommand{\nrUnusedticx}[0]{22}
+\newcommand{\percentageUnusedticx}[0]{100\%}
+\newcommand{\nrUnusedpowerpc}[0]{67}
+\newcommand{\percentageUnusedpowerpc}[0]{99\%}
+\newcommand{\nrUnusedmipsdsp}[0]{128}
+\newcommand{\percentageUnusedmipsdsp}[0]{94\%}
+\newcommand{\nrUnusedalteraniosII}[0]{62}
+\newcommand{\percentageUnusedalteraniosII}[0]{87\%}
+\newcommand{\nrUnusedmipssim}[0]{913}
+\newcommand{\percentageUnusedmipssim}[0]{86\%}
+\newcommand{\nrUnusedmipsloongson}[0]{83}
+\newcommand{\percentageUnusedmipsloongson}[0]{84\%}
+\newcommand{\nrUnusedarmvmsecurityextensions}[0]{10}
+\newcommand{\percentageUnusedarmvmsecurityextensions}[0]{83\%}
+\newcommand{\nrUnusedarc}[0]{17}
+\newcommand{\percentageUnusedarc}[0]{81\%}
+\newcommand{\nrUnusedx}[0]{715}
+\newcommand{\percentageUnusedx}[0]{75\%}
+\newcommand{\nrUnusedpowerpctransactions}[0]{27}
+\newcommand{\percentageUnusedpowerpctransactions}[0]{73\%}
+\newcommand{\nrUnusedmipsother}[0]{2}
+\newcommand{\percentageUnusedmipsother}[0]{67\%}
+\newcommand{\nrUnusedssystemz}[0]{6}
+\newcommand{\percentageUnusedssystemz}[0]{60\%}
+\newcommand{\nrUnusedpowerpcaltivec}[0]{142}
+\newcommand{\percentageUnusedpowerpcaltivec}[0]{55\%}
+\newcommand{\nrUnusedotherlibc}[0]{141}
+\newcommand{\percentageUnusedotherlibc}[0]{37\%}
+\newcommand{\nrUnusedalpha}[0]{15}
+\newcommand{\percentageUnusedalpha}[0]{33\%}
+\newcommand{\nrUnusedavr}[0]{4}
+\newcommand{\percentageUnusedavr}[0]{31\%}
+\newcommand{\nrUnusedfrvreadwrit}[0]{2}
+\newcommand{\percentageUnusedfrvreadwrit}[0]{25\%}
+\newcommand{\nrUnusedxtransactions}[0]{1}
+\newcommand{\percentageUnusedxtransactions}[0]{25\%}
+\newcommand{\nrUnusedobjectsiz}[0]{4}
+\newcommand{\percentageUnusedobjectsiz}[0]{22\%}
+\newcommand{\nrUnusedother}[0]{10}
+\newcommand{\percentageUnusedother}[0]{15\%}
+\newcommand{\nrUnusedtilegx}[0]{1}
+\newcommand{\percentageUnusedtilegx}[0]{11\%}
+\newcommand{\nrUnusedoverflow}[0]{2}
+\newcommand{\percentageUnusedoverflow}[0]{8\%}
+\newcommand{\nrUnusedarmcextensions}[0]{4}
+\newcommand{\percentageUnusedarmcextensions}[0]{0\%}
+\newcommand{\unusedOverflowBuiltins}[0]{\_\_builtin\_sub\_overflow\_p, and \_\_builtin\_mul\_overflow\_p}
+\newcommand{\unusedOtherLibcBuiltins}[0]{\_\_builtin\_\_exit, \_\_builtin\_dcgettext, \_\_builtin\_dgettext, \_\_builtin\_dremf, \_\_builtin\_dreml, \_\_builtin\_drem, \_\_builtin\_exp10f, \_\_builtin\_exp10l, \_\_builtin\_exp10, \_\_builtin\_fprintf\_unlocked, \_\_builtin\_fputs\_unlocked, \_\_builtin\_gammaf, \_\_builtin\_gammal, \_\_builtin\_gamma, \_\_builtin\_gammaf\_r, \_\_builtin\_gammal\_r, \_\_builtin\_gamma\_r, \_\_builtin\_gettext, \_\_builtin\_isascii, \_\_builtin\_j0f, \_\_builtin\_j0l, \_\_builtin\_j0, \_\_builtin\_j1f, \_\_builtin\_j1l, \_\_builtin\_j1, \_\_builtin\_jnf, \_\_builtin\_jnl, \_\_builtin\_jn, \_\_builtin\_lgammal\_r, \_\_builtin\_pow10f, \_\_builtin\_pow10l, \_\_builtin\_pow10, \_\_builtin\_printf\_unlocked, \_\_builtin\_scalbf, \_\_builtin\_scalbl, \_\_builtin\_scalb, \_\_builtin\_signbitd32, \_\_builtin\_signbitd64, \_\_builtin\_signbitd128, \_\_builtin\_significandf, \_\_builtin\_significandl, \_\_builtin\_significand, \_\_builtin\_sincosf, \_\_builtin\_sincosl, \_\_builtin\_sincos, \_\_builtin\_stpncpy, \_\_builtin\_strcasecmp, \_\_builtin\_strdup, \_\_builtin\_strfmon, \_\_builtin\_strncasecmp, \_\_builtin\_strndup, \_\_builtin\_toascii, \_\_builtin\_y0f, \_\_builtin\_y0l, \_\_builtin\_y0, \_\_builtin\_y1f, \_\_builtin\_y1l, \_\_builtin\_y1, \_\_builtin\_ynf, \_\_builtin\_ynl, \_\_builtin\_yn, \_\_builtin\_\_Exit, \_\_builtin\_cacosf, \_\_builtin\_cacoshf, \_\_builtin\_cacoshl, \_\_builtin\_cacosh, \_\_builtin\_cacosl, \_\_builtin\_cacos, \_\_builtin\_casinf, \_\_builtin\_casinhf, \_\_builtin\_casinhl, \_\_builtin\_casinh, \_\_builtin\_casinl, \_\_builtin\_casin, \_\_builtin\_catanf, \_\_builtin\_catanhf, \_\_builtin\_catanhl, \_\_builtin\_catanh, \_\_builtin\_catanl, \_\_builtin\_catan, \_\_builtin\_cprojf, \_\_builtin\_cprojl, \_\_builtin\_cproj, \_\_builtin\_erfcf, \_\_builtin\_erfcl, \_\_builtin\_erfc, \_\_builtin\_erff, \_\_builtin\_erfl, \_\_builtin\_erf, \_\_builtin\_imaxabs, \_\_builtin\_isblank, \_\_builtin\_iswblank, \_\_builtin\_lgammal, \_\_builtin\_llroundl, \_\_builtin\_lroundl, \_\_builtin\_nearbyintl, \_\_builtin\_nexttowardf, \_\_builtin\_nexttowardl, \_\_builtin\_nexttoward, \_\_builtin\_remquof, \_\_builtin\_remquol, \_\_builtin\_remquo, \_\_builtin\_scalblnf, \_\_builtin\_scalblnl, \_\_builtin\_scalbln, \_\_builtin\_tgammaf, \_\_builtin\_tgammal, \_\_builtin\_tgamma, \_\_builtin\_vfscanf, \_\_builtin\_vscanf, \_\_builtin\_vsscanf, \_\_builtin\_fabsfn, \_\_builtin\_fabsfnx, \_\_builtin\_copysignfn, \_\_builtin\_copysignfnx, \_\_builtin\_clog10, \_\_builtin\_clog10f, \_\_builtin\_clog10l, \_\_builtin\_fprintf, \_\_builtin\_fputs, \_\_builtin\_fscanf, \_\_builtin\_isalnum, \_\_builtin\_isalpha, \_\_builtin\_iscntrl, \_\_builtin\_isdigit, \_\_builtin\_isgraph, \_\_builtin\_islower, \_\_builtin\_isprint, \_\_builtin\_ispunct, \_\_builtin\_isspace, \_\_builtin\_isupper, \_\_builtin\_isxdigit, \_\_builtin\_tolower, \_\_builtin\_toupper, \_\_builtin\_modf, \_\_builtin\_putchar, \_\_builtin\_puts, \_\_builtin\_scanf, \_\_builtin\_sscanf, \_\_builtin\_vfprintf, and \_\_builtin\_vprintf}
+\newcommand{\unusedOtherBuiltins}[0]{\_\_builtin\_alloca\_with\_align, \_\_builtin\_call\_with\_static\_chain, \_\_builtin\_huge\_valfn, \_\_builtin\_huge\_valfnx, \_\_builtin\_inffn, \_\_builtin\_inffnx, \_\_builtin\_nanfn, \_\_builtin\_nanfnx, \_\_builtin\_nansfn, and \_\_builtin\_nansfnx}
+\newcommand{\nrUnusedOverflowBuiltins}[0]{49}
+\newcommand{\nrUnusedOtherLibcBuiltins}[0]{2,466}
+\newcommand{\nrUnusedOtherBuiltins}[0]{204}
+\newcommand{\commitmostaddedbuiltintable}[0]{
+\captionof{table}{Commit that added most builtins}
+\begin{tabular}{l l l l}
+\toprule{}
+github project & commit message & added builtins & commit nr \\
+\midrule{}%
+gromacs & Nonbonded kernels implemented for PowerPC Altivec instruction set. & 31389 & 5645 \\
+darling & Add more compiler includes & 26940 & 311 \\
+darwin-xnu & xnu-4570.1.46 & 19810 & 1 \\
+Bulllord-Engine & add video plugins & 15642 & 39 \\
+FFmpegMediaPlayer & proved gradle support & 9746 & 60 \\
+small-video-record & 提交small-video-record2 & 8771 & 68 \\
+FFmpeg4Android & 提交demo & 8771 & 20 \\
+humble-video & Merge commit 'b7382a86182275998d516ea59228b2b5e4760d4d' & 7406 & 5 \\
+gromacs &  & 7196 & 6661 \\
+humble-video & Merge branch 'release/v0.2' & 6349 & 10 \\
+avidemux2 &  & 6296 & 5010 \\
+OpenPHT & Update ffmpeg to 2.8.7 & 5533 & 240 \\
+humble-video & update to 2.8 & 5224 & 3 \\
+emu-ex-plus-alpha & C64 updates & 5193 & 35 \\
+xuggle-xuggler & - Adding xuggle-ffmpeg dependency as sub-tree under 'captive' & 4924 & 298 \\
+\bottomrule{}
+\end{tabular}
+\label{tbl:commitmostadded}}
+\newcommand{\commitmostaddedbuiltintablewithoutfirstcommit}[0]{
+\captionof{table}{Commit that added most builtins (without the first five commits)}
+\begin{tabular}{l l l l}
+\toprule{}
+github project & commit message & added builtins & commit nr \\
+\midrule{}%
+gromacs & Nonbonded kernels implemented for PowerPC Altivec instruction set. & 31389 & 5645 \\
+darling & Add more compiler includes & 26940 & 311 \\
+Bulllord-Engine & add video plugins & 15642 & 39 \\
+FFmpegMediaPlayer & proved gradle support & 9746 & 60 \\
+small-video-record & 提交small-video-record2 & 8771 & 68 \\
+FFmpeg4Android & 提交demo & 8771 & 20 \\
+gromacs &  & 7196 & 6661 \\
+humble-video & Merge branch 'release/v0.2' & 6349 & 10 \\
+avidemux2 &  & 6296 & 5010 \\
+OpenPHT & Update ffmpeg to 2.8.7 & 5533 & 240 \\
+emu-ex-plus-alpha & C64 updates & 5193 & 35 \\
+xuggle-xuggler & - Adding xuggle-ffmpeg dependency as sub-tree under 'captive' & 4924 & 298 \\
+humble-video & Merge branch 'captive\_merge' into repeatable\_build & 4672 & 162 \\
+OpenPHT & step 3/4: Move linuxport to trunk.  How'd I get roped into this? & 4216 & 14344 \\
+android & step 3/4: Move linuxport to trunk.  How'd I get roped into this? & 4216 & 12769 \\
+\bottomrule{}
+\end{tabular}
+\label{tbl:commitmostaddedwithoutfirstcommit}}
+\newcommand{\commitmostremovedbuiltintable}[0]{
+\captionof{table}{Commit that removed most builtins}
+\begin{tabular}{l l l l}
+\toprule{}
+github project & commit message & removed builtins & commit nr \\
+\midrule{}%
+gromacs & Merge "Merge remote-tracking branch 'gerrit/release-4-6'" & -31396 & 2318 \\
+darling & Fix build with newer clang (\#261), update libc++ & -26941 & 292 \\
+gromacs & All nonbonded kernel routines have been moved to separate subdirectories. & -11955 & 5684 \\
+FFmpegMediaPlayer & Improved gradle support & -9746 & 56 \\
+emu-ex-plus-alpha & Remove unneeded bundled libraries & -5193 & 34 \\
+avidemux2 & [cleanup] ADM\_ffmpeg & -3309 & 3178 \\
+xuggle-xuggler & remove oldabi ffmpeg source & -3264 & 273 \\
+xuggle-xuggler & remote ffmpeg AGAIN & -3230 & 212 \\
+humble-video & remove ffmpeg before upgrade & -2990 & 61 \\
+bomi & remove ffmpeg source tree & -2983 & 1555 \\
+bomi & remove ffmpeg source tree & -2983 & 1634 \\
+avidemux2 & [Encoder] Removed old encoder & -2974 & 4784 \\
+avidemux2 & [FFmpeg] Update to 23 Nov git & -2367 & 4339 \\
+gromacs & All nonbonded kernels have been moved to separate subdirectories & -1788 & 5687 \\
+glibc & Use glibc\_likely instead \_\_builtin\_expect. & -1656 & 5695 \\
+\bottomrule{}
+\end{tabular}
+\label{tbl:commitmostremoved}}
+\newcommand{\userswithmostcommitspositivenegative}[0]{
+\captionof{table}{Committers with the highest number of builtin-related commits}
+\begin{tabular}{l l l l}
+\toprule{}
+name & email & nr builtin-related commits & nr projects \\
+\midrule{}%
+Linus Torvalds & torvalds@linux-foundation.org & 10529 & 32 \\
+Ulrich Drepper & drepper@redhat.com & 1908 & 2 \\
+Linus Torvalds & torvalds@woody.linux-foundation.org & 940 & 33 \\
+Linus Torvalds & torvalds@g5.osdl.org & 660 & 33 \\
+Christoph Lameter & clameter@sgi.com & 292 & 34 \\
+Ingo Molnar & mingo@elte.hu & 264 & 33 \\
+Roland McGrath & roland@gnu.org & 248 & 2 \\
+Thomas Gleixner & tglx@linutronix.de & 224 & 32 \\
+Harvey Harrison & harvey.harrison@gmail.com & 192 & 32 \\
+Ulrich Drepper & drepper@gmail.com & 162 & 2 \\
+Pekka Enberg & penberg@cs.helsinki.fi & 137 & 34 \\
+Nicola Bonelli & nicola.bonelli@gmail.com & 136 & 1 \\
+Christoph Hellwig & hch@lst.de & 132 & 33 \\
+Linux Build Service Account & lnxbuild@localhost & 132 & 8 \\
+Masami Hiramatsu & mhiramat@redhat.com & 128 & 32 \\
+Luca Barbato & lu\_zero@gentoo.org & 120 & 3 \\
+wdenk & wdenk & 105 & 5 \\
+Joseph Myers & joseph@codesourcery.com & 104 & 2 \\
+James Zern & jzern@google.com & 102 & 2 \\
+Rusty Russell & rusty@rustcorp.com.au & 100 & 38 \\
+\bottomrule{}
+\end{tabular}
+\label{tbl:userswithmostcommitspositivenegative}}
+\newcommand{\userswithmostcommitsnegative}[0]{
+\captionof{table}{Committers with the highest number of builtin-related commits (deletions only)}
+\begin{tabular}{l l l l}
+\toprule{}
+name & email & nr builtin-related commits & nr projects \\
+\midrule{}%
+Linus Torvalds & torvalds@linux-foundation.org & 2268 & 32 \\
+Linus Torvalds & torvalds@woody.linux-foundation.org & 322 & 33 \\
+Ulrich Drepper & drepper@redhat.com & 202 & 2 \\
+Linus Torvalds & torvalds@g5.osdl.org & 198 & 33 \\
+Andrew Morton & akpm@osdl.org & 99 & 33 \\
+Ingo Molnar & mingo@elte.hu & 99 & 33 \\
+Roman Zippel & zippel@linux-m68k.org & 66 & 33 \\
+Adrian Bunk & bunk@stusta.de & 65 & 33 \\
+Christoph Lameter & clameter@sgi.com & 65 & 33 \\
+Harvey Harrison & harvey.harrison@gmail.com & 64 & 32 \\
+Linux Build Service Account & lnxbuild@localhost & 37 & 8 \\
+Rusty Russell & rusty@rustcorp.com.au & 35 & 32 \\
+Andi Kleen & ak@suse.de & 33 & 33 \\
+Christoph Hellwig & hch@lst.de & 33 & 33 \\
+David Howells & dhowells@redhat.com & 33 & 33 \\
+David Woodhouse & dwmw2@shinybook.infradead.org & 33 & 33 \\
+Jeff Dike & jdike@addtoit.com & 33 & 33 \\
+Jeff Garzik & jgarzik@pobox.com & 33 & 33 \\
+Linus Torvalds & torvalds@woody.osdl.org & 33 & 33 \\
+Trond Myklebust & Trond.Myklebust@netapp.com & 33 & 33 \\
+\bottomrule{}
+\end{tabular}
+\label{tbl:userswithmostcommitsnegative}}
+\newcommand{\userswithmostcommitspositive}[0]{
+\captionof{table}{Committers with the highest number of builtin-related commits (additions only)}
+\begin{tabular}{l l l l}
+\toprule{}
+name & email & nr builtin-related commits & nr projects \\
+\midrule{}%
+Linus Torvalds & torvalds@linux-foundation.org & 5490 & 32 \\
+Ulrich Drepper & drepper@redhat.com & 1222 & 2 \\
+Linus Torvalds & torvalds@woody.linux-foundation.org & 389 & 33 \\
+Linus Torvalds & torvalds@g5.osdl.org & 231 & 33 \\
+Ingo Molnar & mingo@elte.hu & 165 & 33 \\
+Roland McGrath & roland@gnu.org & 156 & 2 \\
+Ulrich Drepper & drepper@gmail.com & 116 & 2 \\
+Pekka Enberg & penberg@cs.helsinki.fi & 101 & 34 \\
+Christoph Lameter & clameter@sgi.com & 98 & 33 \\
+Masami Hiramatsu & mhiramat@redhat.com & 96 & 32 \\
+wdenk & wdenk & 90 & 5 \\
+Linux Build Service Account & lnxbuild@localhost & 74 & 8 \\
+Wolfgang Denk & wd@denx.de & 68 & 5 \\
+Linus Torvalds & torvalds@ppc970.osdl.org & 66 & 33 \\
+Daniel Lemire & lemire@gmail.com & 65 & 3 \\
+David Howells & dhowells@redhat.com & 65 & 33 \\
+H. Peter Anvin & hpa@zytor.com & 64 & 32 \\
+Harvey Harrison & harvey.harrison@gmail.com & 64 & 32 \\
+Brian Bidulock & bidulock@openss7.org & 61 & 1 \\
+James Zern & jzern@google.com & 59 & 2 \\
+\bottomrule{}
+\end{tabular}
+\label{tbl:userswithmostcommitspositive}}
+\newcommand{\medianlessthanfivecommits}[0]{1}
+\newcommand{\medianmostlyincreasing}[0]{18}
+\newcommand{\medianmostlystable}[0]{10}
+\newcommand{\medianstablethenincreasing}[0]{14}
+\newcommand{\medianincreasingthendecreasing}[0]{16}
+\newcommand{\mediannoclearpattern}[0]{14}
+\newcommand{\medianincreasingthenstable}[0]{12}
+\newcommand{\mediandecreasingthenincreasing}[0]{5}
+\newcommand{\medianinitialimport}[0]{293}
+\newcommand{\medianspikethenstable}[0]{8}
+\newcommand{\trendtable}[0]{
+\captionof{table}{Builtin trends in projects}
+\begin{tabular}{l l}
+\toprule{}
+trend & \# builtins\\
+\midrule{}%
+less than 5 commits & 1162 \\
+mostly increasing & 572 \\
+no clear pattern & 236 \\
+increasing, then stable & 226 \\
+increasing, then decreasing & 185 \\
+mostly stable & 82 \\
+stable, then increasing & 32 \\
+spike, then stable & 24 \\
+initial import & 15 \\
+decreasing, then increasing & 2 \\
+\bottomrule{}
+\end{tabular}
+\label{tbl:trendtable}}
+\newcommand{\projectstatstable}[0]{
+\captionof{table}{Overview of the projects obtained (after filtering); the first commit in 1984 stems from a project that was converted from another version-control system.}
+\begin{tabular}{l l l l l}
+\toprule{}
+Metric & Minimum & Maximum & Average & Median \\
+\midrule{}%
+C LOC & 100 & 37M & 228k & 10k \\
+\# commits & 1 & 668k & 4872 & 1147 \\
+\# committers & 1 & 17k & 120 & 54 \\
+first commit & 1984-02-21 & 2017-11-06 & - & 2011-04-12 \\
+last commit & 2003-12-08 & 2017-11-24 & - & 2017-11-07 \\
+\bottomrule{}
+\end{tabular}
+\label{tbl:projectstatstable}}
+\newcommand{\builtintablemachinespecific}[0]{
+\captionof{table}{Architecture-specific builtins}
+\begin{tabular}{l l l}
+\toprule{}
+category & \# builtins & \% used \\
+\midrule{}%
+6.60.1 AArch64  & 4 & 0.0 \\
+6.60.10 AVR  & 13 & 69.2 \\
+6.60.11 Blackfin  & 2 & 100.0 \\
+6.60.12.2 Directly-Mapped Integer Functions & 10 & 0.0 \\
+6.60.12.3 Directly-Mapped Media Functions & 88 & 0.0 \\
+6.60.12.4 Raw Read/Write Functions & 8 & 75.0 \\
+6.60.12.5 Other  & 6 & 0.0 \\
+6.60.13 MIPS DSP  & 136 & 5.9 \\
+6.60.15 MIPS Loongson  & 99 & 16.2 \\
+6.60.16 MIPS SIMD Architecture (MSA) Support & 1060 & 13.9 \\
+6.60.17 Other MIPS  & 3 & 33.3 \\
+6.60.18 MSP430  & 3 & 100.0 \\
+6.60.19 NDS32  & 8 & 0.0 \\
+6.60.2 Alpha  & 46 & 67.4 \\
+6.60.20 picoChip  & 6 & 0.0 \\
+6.60.21 PowerPC  & 68 & 1.5 \\
+6.60.22 PowerPC AltiVec  & 259 & 45.2 \\
+6.60.22 PowerPC AltiVec  (internal) & 103 & 0.0 \\
+6.60.23 PowerPC Hardware Transactional Memory  & 37 & 27.0 \\
+6.60.24 RX  & 21 & 0.0 \\
+6.60.25 S/390 System z  & 10 & 40.0 \\
+6.60.26 SH  & 2 & 0.0 \\
+6.60.27 SPARC VIS  & 141 & 0.0 \\
+6.60.29 TI C6X  & 22 & 0.0 \\
+6.60.3 Altera Nios II  & 71 & 12.7 \\
+6.60.30 TILE-Gx  & 9 & 88.9 \\
+6.60.32 x86  & 950 & 24.7 \\
+6.60.33 x86 Transactional Memory  & 4 & 75.0 \\
+6.60.4 ARC  & 21 & 19.0 \\
+6.60.5 ARC SIMD  & 102 & 0.0 \\
+6.60.6 ARM iWMMXt  & 140 & 0.0 \\
+6.60.7 ARM C Language Extensions (ACLE) & 2013 & 99.8 \\
+6.60.8 ARM Floating Point Status and Control  & 2 & 100.0 \\
+6.60.9 ARM ARMv8-M Security Extensions & 12 & 16.7 \\
+\bottomrule{}
+\end{tabular}
+\label{tbl:machinespecificbuiltins}}
+\newcommand{\builtintablemachineindependent}[0]{
+\captionof{table}{Architecture-independent builtins}
+\begin{tabular}{l l l}
+\toprule{}
+category & \# builtins & \% used \\
+\midrule{}%
+6.49 Getting the Return or Frame Address of a Function & 4 & 100.0 \\
+6.50 Using Vector Instructions  & 1 & 100.0 \\
+6.51 Support for offsetof & 1 & 100.0 \\
+6.52 Legacy \_\_sync  for Atomic Memory Access & 17 & 100.0 \\
+6.53  for Memory Model Aware Atomic Operations & 26 & 100.0 \\
+6.54  to Perform Arithmetic with Overflow Checking & 24 & 91.7 \\
+6.56 Object Size Checking  & 18 & 77.8 \\
+6.57 Pointer Bounds Checker  & 11 & 0.0 \\
+6.58 Cilk Plus C/C++ Language Extension  & 13 & 0.0 \\
+6.59 Other  Provided by GCC & 68 & 85.3 \\
+6.59 Other  Provided by GCC (libc functions) & 377 & 62.6 \\
+Internal GCC builtins & 6275 & 100.0 \\
+\bottomrule{}
+\end{tabular}
+\label{tbl:machineindependentbuiltins}}
+\newcommand{\builtintablemostbuiltins}[0]{
+\captionof{table}{Projects with most unique builtins}
+\begin{tabular}{l l l}
+\toprule{}
+URL (starting with https://github.com/) & KLOC & unique builtins \\
+\midrule{}%
+\href{http://github.com/apple/darwin-xnu}{apple/darwin-xnu} & 959 & 2069 \\
+\href{http://github.com/MarilynDafa/Bulllord-Engine}{MarilynDafa/Bulllord-Engine} & 875 & 587 \\
+\href{http://github.com/artclarke/humble-video}{artclarke/humble-video} & 1812 & 581 \\
+\href{http://github.com/webmproject/libvpx}{webmproject/libvpx} & 219 & 505 \\
+\href{http://github.com/webmproject/libwebp}{webmproject/libwebp} & 65 & 345 \\
+\href{http://github.com/pocl/pocl}{pocl/pocl} & 59 & 327 \\
+\href{http://github.com/kripken/emscripten}{kripken/emscripten} & 692 & 313 \\
+\href{http://github.com/dava/dava.engine}{dava/dava.engine} & 1264 & 258 \\
+\href{http://github.com/mabeijianxi/FFmpeg4Android}{mabeijianxi/FFmpeg4Android} & 1019 & 255 \\
+\href{http://github.com/chai2010/webp}{chai2010/webp} & 95 & 253 \\
+\href{http://github.com/RasPlex/OpenPHT}{RasPlex/OpenPHT} & 1820 & 241 \\
+\href{http://github.com/Telegram-FOSS-Team/Telegram-FOSS}{Telegram-FOSS-Team/Telegram-FOSS} & 929 & 237 \\
+\href{http://github.com/mabeijianxi/small-video-record}{mabeijianxi/small-video-record} & 950 & 237 \\
+\href{http://github.com/FFmpeg/FFmpeg}{FFmpeg/FFmpeg} & 996 & 236 \\
+\href{http://github.com/freebsd/freebsd}{freebsd/freebsd} & 12320 & 231 \\
+\bottomrule{}
+\end{tabular}
+\label{tbl:mostbuiltins}}
+\newcommand{\builtintablemostnonuniquebuiltins}[0]{
+\captionof{table}{Projects with most builtins}
+\begin{tabular}{l l l}
+\toprule{}
+URL (starting with https://github.com/) & KLOC & unique builtins \\
+\midrule{}%
+\href{http://github.com/artclarke/humble-video}{artclarke/humble-video} & 1812 & 23637 \\
+\href{http://github.com/apple/darwin-xnu}{apple/darwin-xnu} & 959 & 20067 \\
+\href{http://github.com/webmproject/libvpx}{webmproject/libvpx} & 219 & 16981 \\
+\href{http://github.com/MarilynDafa/Bulllord-Engine}{MarilynDafa/Bulllord-Engine} & 875 & 16694 \\
+\href{http://github.com/mabeijianxi/FFmpeg4Android}{mabeijianxi/FFmpeg4Android} & 1019 & 11695 \\
+\href{http://github.com/RasPlex/OpenPHT}{RasPlex/OpenPHT} & 1820 & 9640 \\
+\href{http://github.com/FFmpeg/FFmpeg}{FFmpeg/FFmpeg} & 996 & 9487 \\
+\href{http://github.com/mabeijianxi/small-video-record}{mabeijianxi/small-video-record} & 950 & 8771 \\
+\href{http://github.com/ciphor/ffmpeg4ios}{ciphor/ffmpeg4ios} & 416 & 6668 \\
+\href{http://github.com/artclarke/xuggle-xuggler}{artclarke/xuggle-xuggler} & 1305 & 4882 \\
+\href{http://github.com/xbmc/atv2}{xbmc/atv2} & 2454 & 4255 \\
+\href{http://github.com/xbmc/android}{xbmc/android} & 1343 & 4105 \\
+\href{http://github.com/projectNe10/Ne10}{projectNe10/Ne10} & 28 & 3519 \\
+\href{http://github.com/lattera/glibc}{lattera/glibc} & 838 & 3507 \\
+\href{http://github.com/dxjia/ffmpeg-compile-shared-library-for-android}{dxjia/ffmpeg-compile-shared-library-for-android} & 734 & 3438 \\
+\bottomrule{}
+\end{tabular}
+\label{tbl:mostnonuniquebuiltins}}
+\newcommand{\builtintable}{
+\begin{table*}
+\footnotesize
+\caption{The 100 most frequent builtins}
+\label{tbl:common-instructions}
+\begin{tabular}{l l r r |l l r r}
+\toprule{}
+builtin & category & \# projects & \% projects & builtin & category & \# projects & \% projects \\
+\midrule{}
+
+\_\_builtin\_expect & other (compiler interaction) & 890 & 48.3 & \_\_builtin\_va\_copy & GCC internal & 85 & 4.6\\
+\cmidrule(lr){1-8}
+\_\_builtin\_clz & other (bitwise operation) & 536 & 29.1 & \_\_builtin\_memset & other (libc) & 82 & 4.5\\
+\cmidrule(lr){1-8}
+\_\_builtin\_bswap32 & other (bitwise operation) & 483 & 26.2 & vec\_and & powerpc-altivec & 82 & 4.5\\
+\cmidrule(lr){1-8}
+\_\_builtin\_constant\_p & other (compiler interaction) & 430 & 23.3 & vaddq\_s32 & arm-c-extensions & 81 & 4.4\\
+\cmidrule(lr){1-8}
+\_\_builtin\_alloca & other (stack allocation) & 373 & 20.2 & vsubq\_s32 & arm-c-extensions & 81 & 4.4\\
+\cmidrule(lr){1-8}
+\_\_sync\_synchronize & sync & 356 & 19.3 & vec\_sr & powerpc-altivec & 81 & 4.4\\
+\cmidrule(lr){1-8}
+\_\_builtin\_bswap64 & other (bitwise operation) & 347 & 18.8 & \_\_builtin\_object\_size & object-siz & 77 & 4.2\\
+\cmidrule(lr){1-8}
+\_\_sync\_fetch\_and\_add & sync & 332 & 18.0 & \_\_builtin\_extract\_return\_addr & address & 77 & 4.2\\
+\cmidrule(lr){1-8}
+\_\_builtin\_ctz & other (bitwise operation) & 324 & 17.6 & \_\_atomic\_fetch\_add & atomic & 74 & 4.0\\
+\cmidrule(lr){1-8}
+\_\_builtin\_bswap16 & other (bitwise operation) & 304 & 16.5 & vget\_high\_s16 & arm-c-extensions & 74 & 4.0\\
+\cmidrule(lr){1-8}
+\_\_builtin\_clzll & other (bitwise operation) & 277 & 15.0 & \_\_builtin\_memcmp & other (libc) & 73 & 4.0\\
+\cmidrule(lr){1-8}
+\_\_sync\_add\_and\_fetch & sync & 253 & 13.7 & vld1q\_s16 & arm-c-extensions & 73 & 4.0\\
+\cmidrule(lr){1-8}
+\_\_builtin\_ctzll & other (bitwise operation) & 236 & 12.8 & vdup\_n\_u8 & arm-c-extensions & 72 & 3.9\\
+\cmidrule(lr){1-8}
+\_\_builtin\_memcpy & other (libc) & 235 & 12.8 & \_\_builtin\_huge\_val & other (special value) & 71 & 3.9\\
+\cmidrule(lr){1-8}
+\_\_sync\_bool\_compare\_and\_swap & sync & 234 & 12.7 & \_\_atomic\_thread\_fence & atomic & 71 & 3.9\\
+\cmidrule(lr){1-8}
+\_\_sync\_val\_compare\_and\_swap & sync & 230 & 12.5 & vaddq\_s16 & arm-c-extensions & 71 & 3.9\\
+\cmidrule(lr){1-8}
+\_\_builtin\_unreachable & other (compiler interaction) & 230 & 12.5 & vdupq\_n\_s16 & arm-c-extensions & 71 & 3.9\\
+\cmidrule(lr){1-8}
+\_\_builtin\_return\_address & address & 213 & 11.6 & vld1\_u8 & arm-c-extensions & 71 & 3.9\\
+\cmidrule(lr){1-8}
+\_\_sync\_lock\_test\_and\_set & sync & 212 & 11.5 & vreinterpretq\_s16\_u16 & arm-c-extensions & 71 & 3.9\\
+\cmidrule(lr){1-8}
+\_\_builtin\_popcount & other (bitwise operation) & 208 & 11.3 & vec\_sel & powerpc-altivec & 71 & 3.9\\
+\cmidrule(lr){1-8}
+\_\_builtin\_types\_compatible\_p & other (compiler interaction) & 207 & 11.2 & vdup\_n\_s16 & arm-c-extensions & 70 & 3.8\\
+\cmidrule(lr){1-8}
+\_\_sync\_sub\_and\_fetch & sync & 205 & 11.1 & vec\_sub & powerpc-altivec & 70 & 3.8\\
+\cmidrule(lr){1-8}
+\_\_builtin\_prefetch & other (compiler interaction) & 193 & 10.5 & \_\_builtin\_nanf & other (special value) & 69 & 3.7\\
+\cmidrule(lr){1-8}
+\_\_builtin\_clzl & other (bitwise operation) & 190 & 10.3 & \_\_builtin\_strlen & other (libc) & 69 & 3.7\\
+\cmidrule(lr){1-8}
+\_\_builtin\_ffs & other (bitwise operation) & 170 & 9.2 & \_\_atomic\_add\_fetch & atomic & 69 & 3.7\\
+\cmidrule(lr){1-8}
+\_\_builtin\_offsetof & offseto & 163 & 8.8 & vst1\_u8 & arm-c-extensions & 69 & 3.7\\
+\cmidrule(lr){1-8}
+\_\_sync\_fetch\_and\_sub & sync & 153 & 8.3 & \_\_builtin\_alpha\_cmpbge & alpha & 69 & 3.7\\
+\cmidrule(lr){1-8}
+\_\_builtin\_frame\_address & address & 145 & 7.9 & \_\_builtin\_huge\_valf & other (special value) & 68 & 3.7\\
+\cmidrule(lr){1-8}
+\_\_builtin\_popcountll & other (bitwise operation) & 141 & 7.7 & \_\_atomic\_exchange\_n & atomic & 68 & 3.7\\
+\cmidrule(lr){1-8}
+\_\_builtin\_choose\_expr & other (compiler interaction) & 132 & 7.2 & vget\_low\_s16 & arm-c-extensions & 68 & 3.7\\
+\cmidrule(lr){1-8}
+\_\_builtin\_va\_start & GCC internal & 119 & 6.5 & vcombine\_s16 & arm-c-extensions & 66 & 3.6\\
+\cmidrule(lr){1-8}
+\_\_builtin\_ctzl & other (bitwise operation) & 118 & 6.4 & vec\_mergeh & powerpc-altivec & 66 & 3.6\\
+\cmidrule(lr){1-8}
+vec\_perm & powerpc-altivec & 114 & 6.2 & vec\_mergel & powerpc-altivec & 66 & 3.6\\
+\cmidrule(lr){1-8}
+\_\_builtin\_va\_end & GCC internal & 114 & 6.2 & vshlq\_n\_s16 & arm-c-extensions & 65 & 3.5\\
+\cmidrule(lr){1-8}
+\_\_sync\_fetch\_and\_or & sync & 112 & 6.1 & vsubq\_s16 & arm-c-extensions & 65 & 3.5\\
+\cmidrule(lr){1-8}
+\_\_builtin\_va\_arg & GCC internal & 111 & 6.0 & vec\_madd & powerpc-altivec & 65 & 3.5\\
+\cmidrule(lr){1-8}
+vec\_add & powerpc-altivec & 108 & 5.9 & vec\_max & powerpc-altivec & 64 & 3.5\\
+\cmidrule(lr){1-8}
+vec\_xor & powerpc-altivec & 102 & 5.5 & \_\_builtin\_inf & other (special value) & 63 & 3.4\\
+\cmidrule(lr){1-8}
+vec\_ld & powerpc-altivec & 100 & 5.4 & vreinterpret\_u32\_u8 & arm-c-extensions & 63 & 3.4\\
+\cmidrule(lr){1-8}
+\_\_builtin\_trap & other (compiler interaction) & 99 & 5.4 & vshll\_n\_u8 & arm-c-extensions & 62 & 3.4\\
+\cmidrule(lr){1-8}
+\_\_sync\_fetch\_and\_and & sync & 98 & 5.3 & vst4\_u8 & arm-c-extensions & 62 & 3.4\\
+\cmidrule(lr){1-8}
+\_\_sync\_lock\_release & sync & 95 & 5.2 & vec\_or & powerpc-altivec & 62 & 3.4\\
+\cmidrule(lr){1-8}
+\_\_atomic\_load\_n & atomic & 94 & 5.1 & vrshrn\_n\_s32 & arm-c-extensions & 61 & 3.3\\
+\cmidrule(lr){1-8}
+vec\_splat & powerpc-altivec & 91 & 4.9 & vsubl\_u8 & arm-c-extensions & 61 & 3.3\\
+\cmidrule(lr){1-8}
+vec\_st & powerpc-altivec & 90 & 4.9 & vtrnq\_s32 & arm-c-extensions & 61 & 3.3\\
+\cmidrule(lr){1-8}
+vec\_lvsl & powerpc-altivec & 88 & 4.8 & \_\_builtin\_alpha\_extwl & alpha & 61 & 3.3\\
+\cmidrule(lr){1-8}
+\_\_atomic\_compare\_exchange\_n & atomic & 87 & 4.7 & vreinterpret\_u8\_u32 & arm-c-extensions & 60 & 3.3\\
+\cmidrule(lr){1-8}
+\_\_builtin\_popcountl & other (bitwise operation) & 86 & 4.7 & vshrn\_n\_s32 & arm-c-extensions & 60 & 3.3\\
+\cmidrule(lr){1-8}
+\_\_atomic\_store\_n & atomic & 86 & 4.7 & vtrnq\_s16 & arm-c-extensions & 60 & 3.3\\
+\cmidrule(lr){1-8}
+vec\_sl & powerpc-altivec & 85 & 4.6 & vmlal\_s16 & arm-c-extensions & 59 & 3.2\\
+\bottomrule{}
+\end{tabular}
+\label{tbl:common-builtins}
+\end{table*}}
+\newcommand{\smallbuiltintable}[0]{
+\captionof{table}{The 10 most frequent builtins.}
+\begin{tabular}{l l l}
+\toprule{}
+builtin & category & projects\\
+\midrule{}%
+\_\_builtin\_expect & other (compiler interaction) & 890 / 48.3\%\\
+\_\_builtin\_clz & other (bitwise operation) & 536 / 29.1\%\\
+\_\_builtin\_bswap32 & other (bitwise operation) & 483 / 26.2\%\\
+\_\_builtin\_constant\_p & other (compiler interaction) & 430 / 23.3\%\\
+\_\_builtin\_alloca & other (stack allocation) & 373 / 20.2\%\\
+\_\_sync\_synchronize & sync & 356 / 19.3\%\\
+\_\_builtin\_bswap64 & other (bitwise operation) & 347 / 18.8\%\\
+\_\_sync\_fetch\_and\_add & sync & 332 / 18.0\%\\
+\_\_builtin\_ctz & other (bitwise operation) & 324 / 17.6\%\\
+\_\_builtin\_bswap16 & other (bitwise operation) & 304 / 16.5\%\\
+\bottomrule{}
+\end{tabular}
+\label{tbl:smallbuiltintable}}
+\newcommand{\mostfrequentfilestable}[0]{
+\captionof{table}{The 10 most frequent file names and their average number of builtins}
+\begin{tabular}{p{1.0cm} p{0.5cm} p{0.5cm} p{0.5cm} p{4.5cm}
+}
+\toprule{}
+file name & average \# of builtins & \# builtins sets & \# projects & most frequent builtin set (stripped the \code{\_\_builtin\_} prefix) \\
+\midrule{}%
+atomic.h & 4.6 & 55 & 130 & \_\_sync\_val\_compare\_and\_swap, \_\_sync\_lock\_test\_and\_set, \_\_sync\_fetch\_and\_add, \_\_sync\_fetch\_and\_sub, \_\_sync\_fetch\_and\_and, \_\_sync\_fetch\_and\_or, \_\_sync\_fetch\_and\_xor \\
+compiler.h & 6.0 & 24 & 128 & types\_compatible\_p, expect, alpha\_insbl, alpha\_inswl, alpha\_insql, alpha\_inslh, alpha\_extbl, alpha\_extwl, alpha\_cmpbge, ctzl, clzl, popcountl, constant\_p \\
+sqlite3.c & 3.1 & 8 & 97 & \_\_sync\_synchronize, bswap32, bswap16, expect \\
+bitops.h & 3.8 & 20 & 83 & popcountll, ctzll, choose\_expr, types\_compatible\_p, ctz, ctzl, popcount, popcountl \\
+stdarg.h & 3.6 & 24 & 82 & va\_start, va\_end, va\_copy, va\_arg \\
+string.h & 4.8 & 21 & 82 & strlen \\
+util.h & 2.2 & 25 & 76 & \_\_sync\_fetch\_and\_add, \_\_sync\_fetch\_and\_sub, expect \\
+swab.h & 3.0 & 7 & 68 & bswap32, bswap64 \\
+SDL\_stdinc.h & 1.0 & 1 & 60 & alloca \\
+io.h & 6.3 & 5 & 59 & va\_start, va\_end, va\_arg \\
+\bottomrule{}
+\end{tabular}
+\label{tbl:mostfrequentfiles}}
+\newcommand{\nrincreasing}[0]{267}
+\newcommand{\percentageincreasing}[0]{39\%}
+\newcommand{\nrincreasingthendecreasing}[0]{93}
+\newcommand{\percentageincreasingthendecreasing}[0]{14\%}
+\newcommand{\nrincreasingthenstable}[0]{140}
+\newcommand{\percentageincreasingthenstable}[0]{21\%}
+\newcommand{\nrlessthanfivecommits}[0]{1,162}
+\newcommand{\percentagelessthanfivecommits}[0]{63\%}
+\newcommand{\nrmostlyincreasing}[0]{250}
+\newcommand{\percentagemostlyincreasing}[0]{37\%}
+\newcommand{\nrmostlystable}[0]{6}
+\newcommand{\percentagemostlystable}[0]{1\%}
+\newcommand{\nrnoclearpattern}[0]{147}
+\newcommand{\percentagenoclearpattern}[0]{22\%}
+\newcommand{\nrnotautomatic}[0]{677}
+\newcommand{\percentagenotautomatic}[0]{37\%}
+\newcommand{\nrspikethenstable}[0]{24}
+\newcommand{\percentagespikethenstable}[0]{4\%}
+\newcommand{\nrstablethenincreasing}[0]{17}
+\newcommand{\percentagestablethenincreasing}[0]{3\%}
+\newcommand{\nrstagnant}[0]{170}
+\newcommand{\percentagestagnant}[0]{25\%}

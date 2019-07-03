@@ -1,0 +1,8 @@
+%url=https://gcc.gnu.org/onlinedocs/gcc-7.2.0/gcc/picoChip-Built-in-Functions.html#picoChip-Built-in-Functions
+%header=6.60.20 picoChip Built-in Functions
+__builtin_sbc
+__builtin_byteswap
+__builtin_brev
+__builtin_adds
+__builtin_subs
+__builtin_halt

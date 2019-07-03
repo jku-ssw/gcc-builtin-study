@@ -1,0 +1,6 @@
+%url=https://gcc.gnu.org/onlinedocs/gcc-7.2.0/gcc/AArch64-Built-in-Functions.html#AArch64-Built-in-Functions
+%header=6.60.1 AArch64 Built-in Functions
+__builtin_aarch64_get_fpcr
+__builtin_aarch64_set_fpcr
+__builtin_aarch64_get_fpsr
+__builtin_aarch64_set_fpsr

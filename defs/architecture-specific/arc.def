@@ -1,0 +1,23 @@
+%url=https://gcc.gnu.org/onlinedocs/gcc-7.2.0/gcc/ARC-Built-in-Functions.html#ARC-Built-in-Functions
+%header=6.60.4 ARC Built-in Functions
+__builtin_arc_aligned
+__builtin_arc_align
+__builtin_arc_brk
+__builtin_arc_core_read
+__builtin_arc_core_write
+__builtin_arc_divaw
+__builtin_arc_flag
+__builtin_arc_lr
+__builtin_arc_mul
+__builtin_arc_mulu
+__builtin_arc_nop
+__builtin_arc_norm
+__builtin_arc_normw
+__builtin_arc_rtie
+__builtin_arc_sleep
+__builtin_arc_sr
+__builtin_arc_swap
+__builtin_arc_swi
+__builtin_arc_sync
+__builtin_arc_trap_s
+__builtin_arc_unimp_s

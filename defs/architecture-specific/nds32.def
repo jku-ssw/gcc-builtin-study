@@ -1,0 +1,10 @@
+%url=https://gcc.gnu.org/onlinedocs/gcc-7.2.0/gcc/NDS32-Built-in-Functions.html#NDS32-Built-in-Functions
+%header=6.60.19 NDS32 Built-in Functions
+__builtin_nds32_isync
+__builtin_nds32_isb
+__builtin_nds32_mfsr
+__builtin_nds32_mfusr
+__builtin_nds32_mtsr
+__builtin_nds32_mtusr
+__builtin_nds32_setgie_en
+__builtin_nds32_setgie_dis

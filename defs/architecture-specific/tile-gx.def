@@ -1,0 +1,11 @@
+%header=6.60.30 TILE-Gx Built-in Functions
+%url=https://gcc.gnu.org/onlinedocs/gcc-7.2.0/gcc/TILE-Gx-Built-in-Functions.html#TILE-Gx-Built-in-Functions
+__tile_idn0_receive
+__tile_idn1_receive
+__tile_udn0_receive
+__tile_udn1_receive
+__tile_udn2_receive
+__tile_udn3_receive
+__tile_idn_send
+__tile_udn_send
+__tile_network_barrier

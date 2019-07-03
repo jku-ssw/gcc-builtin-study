@@ -1,0 +1,12 @@
+%url=https://gcc.gnu.org/onlinedocs/gcc-7.2.0/gcc/Directly-mapped-Integer-Functions.html#Directly-mapped-Integer-Functions
+%header=6.60.12.2 Directly-Mapped Integer Functions
+__ADDSS
+__SCAN
+__SCUTSS
+__SLASS
+__SMASS
+__SMSSS
+__SMU
+__SMUL
+__SUBSS
+__UMUL

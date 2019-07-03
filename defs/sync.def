@@ -1,0 +1,19 @@
+%url=https://gcc.gnu.org/onlinedocs/gcc-7.2.0/gcc/_005f_005fsync-Builtins.html#g_t_005f_005fsync-Builtins
+%header=6.52 Legacy __sync Built-in Functions for Atomic Memory Access
+__sync_fetch_and_add
+__sync_fetch_and_sub
+__sync_fetch_and_or
+__sync_fetch_and_and
+__sync_fetch_and_xor
+__sync_fetch_and_nand
+__sync_add_and_fetch
+__sync_sub_and_fetch
+__sync_or_and_fetch
+__sync_and_and_fetch
+__sync_xor_and_fetch
+__sync_nand_and_fetch
+__sync_bool_compare_and_swap
+__sync_val_compare_and_swap
+__sync_synchronize
+__sync_lock_test_and_set
+__sync_lock_release

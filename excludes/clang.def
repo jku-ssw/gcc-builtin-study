@@ -1,0 +1,88 @@
+__builtin_shufflevector
+__builtin_assume
+__builtin_readcyclecounter
+__builtin_convertvector
+__builtin_bitreverse
+__builtin_bitreverse8
+__builtin_bitreverse16
+__builtin_bitreverse32
+__builtin_bitreverse64
+# __builtin_unreachable is also provided by GCC
+__builtin_unpredictable
+__sync_swap
+__builtin_addressof
+__builtin_addcb
+__builtin_addcs
+__builtin_addc
+__builtin_addcl
+__builtin_addcll
+__builtin_subcb
+__builtin_subcs
+__builtin_subc
+__builtin_subcl
+__builtin_subcll
+# __builtin_add_overflow is also provided by GCC
+#__builtin_sub_overflow is also provided by GCC
+#__builtin_mul_overflow is also provided by GCC
+#__builtin_uadd_overflow is also provided by GCC
+#__builtin_uaddl_overflow is also provided by GCC
+#__builtin_uaddll_overflow is also provided by GCC
+#__builtin_usub_overflow is also provided by GCC
+#__builtin_usubl_overflow is also provided by GCC
+#__builtin_usubll_overflow is also provided by GCC
+#__builtin_umul_overflow is also provided by GCC
+#__builtin_umull_overflow is also provided by GCC
+#__builtin_umulll_overflow is also provided by GCC
+#__builtin_sadd_overflow is also provided by GCC
+#__builtin_saddl_overflow is also provided by GCC
+#__builtin_saddll_overflow is also provided by GCC
+#__builtin_ssub_overflow is also provided by GCC
+#__builtin_ssubl_overflow is also provided by GCC
+#__builtin_ssubll_overflow is also provided by GCC
+#__builtin_smul_overflow is also provided by GCC
+#__builtin_smull_overflow is also provided by GCC
+#__builtin_smulll_overflow is also provided by GCC
+__builtin_canonicalize
+__builtin_canonicalizef
+# should be __builtin_canonicalizel?
+double__builtin_canonicalizel
+__builtin_char_memchr
+__c11_atomic_init
+__c11_atomic_thread_fence
+__c11_atomic_signal_fence
+__c11_atomic_is_lock_free
+__c11_atomic_store
+__c11_atomic_load
+__c11_atomic_exchange
+__c11_atomic_compare_exchange_strong
+__c11_atomic_compare_exchange_weak
+__c11_atomic_fetch_add
+__c11_atomic_fetch_sub
+__c11_atomic_fetch_and
+__c11_atomic_fetch_or
+__c11_atomic_fetch_xor
+__builtin_arm_ldrex
+__builtin_arm_ldaex
+__builtin_arm_strex
+__builtin_arm_stlex
+__builtin_arm_clrex
+__builtin_nontemporal_load
+__builtin_nontemporal_store
+__builtin_coro_resume
+__builtin_coro_destroy
+__builtin_coro_done
+__builtin_coro_promise
+__builtin_coro_size
+__builtin_coro_frame
+__builtin_coro_free
+__builtin_coro_id
+__builtin_coro_alloc
+__builtin_coro_begin
+__builtin_coro_end
+__builtin_coro_suspend
+__builtin_coro_param
+# additional builtins found in the webassembly repo (https://github.com/llvm-mirror/clang/blob/master/test/CodeGen/builtins-wasm.c)
+__builtin_wasm_current_memory
+__builtin_wasm_grow_memory
+__builtin_wasm_throw
+__builtin_wasm_rethrow

@@ -1,0 +1,2 @@
+# is a type and not a function builtin
+__builtin_va_list

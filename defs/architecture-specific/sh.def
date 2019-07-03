@@ -1,0 +1,6 @@
+%url=https://gcc.gnu.org/onlinedocs/gcc-7.2.0/gcc/SH-Built-in-Functions.html#SH-Built-in-Functions
+%header=6.60.26 SH Built-in Functions
+#__builtin_set_thread_pointer
+#__builtin_thread_pointer
+__builtin_sh_get_fpscr
+__builtin_sh_set_fpscr

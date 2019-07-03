@@ -1,0 +1,13 @@
+%url=https://gcc.gnu.org/onlinedocs/gcc-7.2.0/gcc/Pointer-Bounds-Checker-builtins.html#Pointer-Bounds-Checker-builtins
+%header=6.57 Pointer Bounds Checker Built-in Functions
+__builtin___bnd_set_ptr_bounds
+__builtin___bnd_narrow_ptr_bounds
+__builtin___bnd_copy_ptr_bounds
+__builtin___bnd_init_ptr_bounds
+__builtin___bnd_null_ptr_bounds
+__builtin___bnd_store_ptr_bounds
+__builtin___bnd_chk_ptr_lbounds
+__builtin___bnd_chk_ptr_ubounds
+__builtin___bnd_chk_ptr_bounds
+__builtin___bnd_get_ptr_lbound
+__builtin___bnd_get_ptr_ubound

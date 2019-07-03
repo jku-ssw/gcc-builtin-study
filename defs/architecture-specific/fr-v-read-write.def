@@ -1,0 +1,10 @@
+%url=https://gcc.gnu.org/onlinedocs/gcc-7.2.0/gcc/Raw-read_002fwrite-Functions.html#Raw-read_002fwrite-Functions
+%header=6.60.12.4 Raw Read/Write Functions
+__builtin_read8
+__builtin_read16
+__builtin_read32
+__builtin_read64
+__builtin_write8
+__builtin_write16
+__builtin_write32
+__builtin_write64

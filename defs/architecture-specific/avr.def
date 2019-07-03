@@ -1,0 +1,15 @@
+%url=https://gcc.gnu.org/onlinedocs/gcc-7.2.0/gcc/AVR-Built-in-Functions.html#AVR-Built-in-Functions
+%header=6.60.10 AVR Built-in Functions
+__builtin_avr_delay_cycles
+__builtin_avr_fmul
+__builtin_avr_sleep
+__builtin_avr_fmuls
+__builtin_avr_nops
+__builtin_avr_sei
+__builtin_avr_fmulsu
+__builtin_avr_wdr
+__builtin_avr_nop
+__builtin_avr_flash_segment
+__builtin_avr_insert_bits
+__builtin_avr_cli
+__builtin_avr_swap

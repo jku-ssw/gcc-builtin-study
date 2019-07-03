@@ -1,0 +1,23 @@
+%url=https://gcc.gnu.org/onlinedocs/gcc-7.2.0/gcc/RX-Built-in-Functions.html#RX-Built-in-Functions
+%header=6.60.24 RX Built-in Functions
+__builtin_rx_wait
+__builtin_rx_revw
+__builtin_rx_round
+__builtin_rx_mvtaclo
+__builtin_rx_racw
+__builtin_rx_mullo
+__builtin_rx_sat
+__builtin_rx_rmpa
+__builtin_rx_clrpsw
+__builtin_rx_machi
+__builtin_rx_mvfacmi
+__builtin_rx_setpsw
+__builtin_rx_brk
+__builtin_rx_maclo
+__builtin_rx_mulhi
+__builtin_rx_mvfachi
+__builtin_rx_mvtachi
+__builtin_rx_mvtipl
+__builtin_rx_int
+__builtin_rx_mvfc
+__builtin_rx_mvtc

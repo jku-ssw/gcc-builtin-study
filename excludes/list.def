@@ -1,0 +1,18 @@
+# opencl-icc-related types: https://www.khronos.org/registry/OpenCL/specs/opencl-2.2-cplusplus.html, https://searchcode.com/codesearch/view/75834785/
+__builtin_vector_double2
+__builtin_vector_float4
+__builtin_vector_float2
+__builtin_vector_ulong2
+__builtin_vector_uint4
+__builtin_vector_uint2
+__builtin_vector_long2
+__builtin_vector_int4
+__builtin_vector_int2
+__builtin_vector_uchar4
+__builtin_vector_uchar2
+__builtin_vector_char4
+__builtin_vector_char2
+# https://github.com/cofyc/r3/blob/master/src/core/u-sha1.c
+__builtin_rol
+# https://github.com/tpn/winddk-8.1/blob/master/Include/km/ioaccess.h 
+__builtin_eieio

@@ -1,0 +1,4 @@
+# firmware.h
+__builtin_fw
+# compiler.h
+__builtin_warning

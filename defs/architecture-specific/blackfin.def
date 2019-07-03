@@ -1,0 +1,4 @@
+%url=https://gcc.gnu.org/onlinedocs/gcc-7.2.0/gcc/Blackfin-Built-in-Functions.html#Blackfin-Built-in-Functions
+%header=6.60.11 Blackfin Built-in Functions
+__builtin_bfin_csync
+__builtin_bfin_ssync

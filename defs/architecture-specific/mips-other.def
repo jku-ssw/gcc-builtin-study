@@ -1,0 +1,5 @@
+%url=https://gcc.gnu.org/onlinedocs/gcc-7.2.0/gcc/Other-MIPS-Built-in-Functions.html#Other-MIPS-Built-in-Functions
+%header=6.60.17 Other MIPS Built-in Functions
+__builtin_mips_cache
+__builtin_mips_get_fcsr
+__builtin_mips_set_fcsr

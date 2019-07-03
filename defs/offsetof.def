@@ -1,0 +1,3 @@
+%url=https://gcc.gnu.org/onlinedocs/gcc-7.2.0/gcc/Offsetof.html#Offsetof
+%header=6.51 Support for offsetof
+__builtin_offsetof

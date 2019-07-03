@@ -1,0 +1,8 @@
+%url=https://gcc.gnu.org/onlinedocs/gcc-7.2.0/gcc/Other-Built-in-Functions.html#Other-Built-in-Functions
+%header=6.60.12.5 Other Built-in Functions
+__IACCreadll
+__IACCreadl
+__IACCsetll
+__IACCsetl
+__data_prefetch0
+__data_prefetch

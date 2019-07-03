@@ -1,0 +1,5 @@
+%url=https://gcc.gnu.org/onlinedocs/gcc-7.2.0/gcc/MSP430-Built-in-Functions.html#MSP430-Built-in-Functions
+%header=6.60.18 MSP430 Built-in Functions
+__bic_SR_register_on_exit
+__bis_SR_register_on_exit
+__delay_cycles

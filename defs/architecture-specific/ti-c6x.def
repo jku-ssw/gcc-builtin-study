@@ -1,0 +1,24 @@
+%url=https://gcc.gnu.org/onlinedocs/gcc-7.2.0/gcc/TI-C6X-Built-in-Functions.html#TI-C6X-Built-in-Functions
+%header=6.60.29 TI C6X Built-in Functions
+_sadd
+_ssub
+_sadd2
+_ssub2
+_mpy2
+_smpy2
+_add4
+_sub4
+_saddu4
+_smpy
+_smpyh
+_smpyhl
+_smpylh
+_sshl
+_subc
+_avg2
+_avgu4
+_clrr
+_extr
+_extru
+_abs
+_abs2
